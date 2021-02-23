@@ -1,0 +1,177 @@
+<!DOCTYPE html><html>
+    <head>
+    
+        <title>Lenguaje_de"Marcado</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    	<style>
+    		*	{
+    			margin:0px;
+    		}
+			body	{
+				font-family:sans-serif;
+				margin-left:3vmax;
+				margin-right:3vmax;
+				text-align:justify;
+			}    		
+    		.button {
+				padding:1vmax;
+				text-align:center;
+				font-size:1.3vmax;
+				background-color:#435DB2;
+				cursor:pointer;
+				color:white;
+				transition-duration:0.4s;
+				border:none;
+				font-weight:bold;
+			}
+			.button:hover {
+				background-color:black;
+				color:#FF7B00;
+			}
+			.Menu {
+				padding:1vmax;
+				text-align:center;
+				font-size:1.3vmax;
+				background-color:#FF7B00;
+				cursor:pointer;
+				color:white;
+				transition-duration:0.4s;
+				border:none;
+				font-weight:bold;
+			}
+			.Menu:hover	{
+				background-color:black;
+				color:#FF7B00;
+			}
+			.dropdown	{
+				position:relative;
+			}
+			.dropdownC	{
+				display:none;
+				position:absolute;
+				z-index:1;
+			}
+			.dropdownC a	{
+				display:block;
+				text-decoration:none;
+				background-color:#1B2E6D;
+				color:white;
+				text-align:center;
+				font-weight:bold;
+				padding:5%;
+				transition-duration:0.4s;
+				border:none;
+				cursor:pointer;
+				font-size:100%;
+				box-shadow:0px 8px 16px 0px rgba(0,0,0,2);
+			}
+			.dropdown:hover button	{
+				display:block;
+			}
+			.dropdown:hover .dropdownC	{
+				display:block;
+				position:absolute;
+			}
+			.dropdownC a:hover	{
+				background-color:black;
+				color:#FF7B00;
+			}
+			.MenuBar	{
+				padding:1vmax;
+				text-align:center;
+				font-size:1.3vmax;
+				color:transparent;
+				border:none;
+				font-weight:bold;
+				background-color:#282923;
+			}
+
+    	</style>
+
+	</head>
+
+    <body>
+
+    	<header style="width:100%;position:fixed">
+
+			<a href="index.html"><button class="button" style="width:15%;float:left">Anterior</button></a>
+
+			<a href="UsoDelLenguaje.html"><button class="button" style="width:15%;float:left">Siguiente</button></a>
+
+			<div class="dropdown" style="float:right;margin-right:6vmax">
+				<button class="Menu">Menú de Navegación</button>
+				<div class="dropdownC">
+					<a href="index.html">Inicio</a>
+					<a href="UsoDelLenguaje.html">Uso del Lenguaje de Marcado</a>
+					<a href="TablasHTML.html">Tablas en HTML</a>
+					<a href="TablaEjemplo.html">Formulario de Ejemplo</a>
+					<a href="DatosPersonales.html">Formulario con datos Personales</a>
+					<a href="DatosEstudios.html">Formulario con datos Estudiantiles</a>
+
+				</div>
+			</div>
+
+			<div class="MenuBar" style="margin-right:6vmax">"#"</div>
+
+		</header>
+
+		<br><br><br><br>
+
+      <h1><strong>Lenguaje de Marcado</strong></h1>
+
+      <p>
+          Es el sistema para anotar un documento de una manera que se distingue sintácticamente del texto, lo que
+          significa que cuando el documento se procesa para su visualización, el lenguaje de marcado no se muestra y
+          solo se usa para formatear el texto. La idea y la terminología evolucionaron a partir del <strong>"marcado"</strong> de los
+          manuscritos en papel (es decir, las instrucciones de revisión de los editores), que tradicionalmente se escribe
+          con un bolígrafo rojo o lápiz azul en los manuscritos de los autores. Este <strong>"marcado"</strong> generalmente incluye
+          tanto correcciones de contenido (como ortografía, puntuación o movimiento del contenido) como también
+          instrucciones tipográficas, como hacer un encabezado más grande o en negrita.
+          <br>
+          <br>
+          En los <strong>medios digitales</strong>, este "texto de instrucción de lápiz azul" fue reemplazado por etiquetas que
+          idealmente indican cuáles son las partes del documento, en lugar de detalles de cómo podrían mostrarse en
+          alguna pantalla. Esto permite a los autores evitar formatear cada instancia del mismo tipo de cosas de forma
+          redundante (y posiblemente inconsistente). También evita la especificación de fuentes y dimensiones que
+          pueden no aplicarse a muchos usuarios (como aquellos con pantallas de diferentes tamaños, problemas de
+          visión y software de lectura de pantalla).
+          <br>
+          <br>
+          Los primeros sistemas de marcado generalmente incluían instrucciones de composición, como lo hacen troff,
+          TeX y LaTeX, mientras que Scribe y la mayoría de los <strong>sistemas de marcado modernos</strong> nombran componentes y
+          luego procesan esos nombres para aplicar formato u otro procesamiento, como en el caso de XML.
+          <br>
+          <br>
+          Algunos lenguajes de marcado, como el HTML ampliamente utilizado, tienen una semántica de presentación
+          predefinida, lo que significa que su especificación prescribe algunos aspectos de cómo presentar los datos
+          estructurados en medios particulares. HTML, como DocBook, Open eBook, JATS y muchos otros, es una
+          aplicación específica de los meta-lenguajes de marcado SGML y XML. Es decir, SGML y XML permiten a los
+          usuarios especificar esquemas particulares, que determinan qué elementos, atributos y otras características
+          están permitidos y dónde.
+          <br>
+          <br>
+          Una característica extremadamente importante de la mayoría de los lenguajes de marcado es que permiten
+          mezclar el marcado directamente en secuencias de texto. Esto sucede todo el tiempo en los documentos:
+          algunas palabras en una oración deben ser enfatizadas o identificadas como un nombre propio, término
+          definido u otro elemento especial. Esto es muy diferente estructuralmente de las bases de datos tradicionales,
+          donde por definición es imposible tener datos que estén (por ejemplo) dentro de un registro, pero no dentro
+          de ningún campo. Asimismo, el marcado de los textos en lenguaje natural debe mantener el orden: no sería
+          suficiente convertir cada párrafo de un libro en un registro de "párrafo", donde esos registros no mantienen el
+          orden.
+      </p>  
+
+      <h2>Ejemlos de Lenguajes de Marcado</h2>
+      
+      <pre style="font-size:14px">        
+1<sup>ro</sup> <strong>HTML</strong>.
+2<sup>do</sup> <strong>XML</strong>.
+3<sup>ro</sup> <strong>SGML</strong>.
+4<sup>to</sup> <strong>Troff</strong>.
+      </pre>
+
+      <a href="UsoDelLenguaje.html" style="float:right">Uso y Aplicación del Lenguaje de Marcado (Siguiente)</a>
+
+  
+  </body>
+
+</html>

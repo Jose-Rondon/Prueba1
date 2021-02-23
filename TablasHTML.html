@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Tablas en HTML</title>
+		<meta chartset="utf-8">
+		<meta name="keywords" content="CSS,HTML">
+		<meta name="description" content="Descripción del uso de la tables en HTML">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<style>
+			*	{
+				margin:0px;
+			}
+			.body	{
+				background-image: url("Imagenes/fondo.png");
+				color:white;
+				background-size: cover;
+				background-attachment: fixed;
+				background-repeat: no-repeat;
+				font-family-:sans-serif;
+				margin-left:3vmax;
+				margin-right:3vmax;
+			}
+			
+			table	{
+				width:auto;
+				color:white;
+				font-family:sans-serif;
+			}
+			th	{
+				background-color: rgb(27,46,109);
+				padding-top: 25px;
+				padding-bottom: 25px;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			td	{
+				background-color: rgb(67,93,178);
+				padding-right: 25px;
+				padding-left: 25px;
+				padding-top: 30px;
+				padding-bottom:30px;
+				text-align: justify;
+			}
+			.table1	{
+				background-color:white;
+				color:black;
+				padding:0px
+			}
+			.button	{
+				color:white;
+				border:none;
+				background-color:#435DB2;
+				text-align:center;
+				padding:1vmax;
+				cursor:pointer;
+				font-size:1.3vmax;
+				transition-duration:0.4s;
+				font-weight:bold;
+			}
+			.button:hover	{
+				background-color:black;
+				color:#FF7B00;
+			}
+			.Menu {
+				color:white;
+				background-color:#FF7B00;
+				text-align:center;
+				font-size:1.3vmax;
+				transition-duration:0.4s;
+				cursor:pointer;
+				border:none;
+				padding:1vmax;
+				font-weight:bold;
+			}
+			.Menu:hover	{
+				background-color:black;
+				color:#FF7B00;
+			}
+			.dropdown {
+				position:relative;
+				display:inline-block;
+			}
+			.dropdownC	{
+				position:absolute;
+				display:none;
+				z-index: 1;
+			}
+			.dropdownC a	{
+				background-color:#1B2E6D;
+				font-size:100%;
+				color:white;
+				padding:1vmax;
+				text-decoration:none;
+				display:block;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,2);
+				transition-duration:0.4s;
+				font-weight:bold;
+				text-align:center;
+				font-family:sans-serif;
+				padding:5%;
+			}
+			.dropdown:hover	.dropdownC	{
+				display:block;
+			}
+			.dropdownC a:hover {
+				background-color:black;color:#FF7B00;
+			}
+			.MenuBar	{
+				padding:1vmax;
+				text-align:center;
+				font-size:1.3vmax;
+				color:transparent;
+				border:none;
+				font-weight:bold;
+				background-color:#282923;
+			}
+
+		</style>
+
+	</head>
+
+	<body class="body">
+
+		<header style="width:100%;position:fixed">
+
+			<a href="UsoDelLenguaje.html"><button class="button" style="width:15%;float:left">Anterior</button></a>
+
+			<a href="TablaEjemplo.html"><button class="button" style="width:15%;float:left">Siguiente</button></a>
+			
+			<div class="dropdown" style="float:right;margin-right:6vmax">
+				<button class="Menu">Menú de Navegación</button>
+				<div class="dropdownC">
+					<a href="index.html">Inicio</a>
+					<a href="LenguajeDeMarcado.html">Lenguaje de Marcado</a>
+					<a href="UsoDelLenguaje.html">Uso del Lenguaje de Marcado</a>
+					<a href="TablaEjemplo.html">Formulario de Ejemplo</a>
+					<a href="DatosPersonales.html">Formulario con datos Personales</a>
+					<a href="DatosEstudios.html">Formulario con datos Estudiantiles</a>
+				</div>
+			</div>
+
+			<div class="MenuBar" style="margin-right:6vmax">"#"</div>
+
+		</header>
+
+		<br><br><br><br>
+
+		<table>
+
+			<tr>
+				<th style="background-color:black" colspan="4"><h1>Tablas en HTML</h1></th>
+			</tr>
+
+			<tr>
+				<th colspan="4">
+					<h2>Definición de la Etiqueta &lt;table&gt;:</h2>
+				</th>
+			</tr>
+
+			<tr>
+				<td colspan="4">
+					<li>La etiqueta <b>&lt;table&gt;</b> define una tabla HTML.</li>
+					<br>
+					<li>Cada fila de la tabla se define con una etiqueta <b>&lt;tr&gt;</b>. Cada encabezado de tabla se define con una etiqueta <b>&lt;th&gt;</b>. Cada celda / datos de la tabla se define con una etiqueta <b>&lt;td&gt;</b>.</li>
+					<br>
+					<li>De forma predeterminada, el texto de los elementos <b>&lt;th&gt;</b> está en negrita y está centrado.</li>
+					<br>
+					<li>De forma predeterminada, el texto de los elementos <b>&lt;td&gt;</b> es regular y está alineado a la izquierda.</li>
+					<br>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2" style="background-color:rgb(40,41,35)">
+					<iframe src="iframe1.html" style="border:none;width:100%"></iframe>
+				</td>
+				
+				<td colspan="2" style="background-color:black">
+					<table>
+						<tr>
+							<th class="table1" style="text-align:center">Compañia</th>
+							<th class="table1" style="text-align:center">Contacto</th>
+							<th class="table1" style="text-align:center">País</th>
+						</tr>
+						<tr>
+							<td class="table1" style="text-align:left">Alfreds Futterkiste</td>
+							<td class="table1" style="text-align:left">Maria Anders</td>
+							<td class="table1" style="text-align:left">Germany</td>
+						</tr>
+						<tr>
+							<td class="table1" style="text-align:left">Centro comercial Moctezuma</td>
+							<td class="table1" style="text-align:left">Francisco Chang</td>
+							<td class="table1" style="text-align:left">Mexico</td>
+						</tr>
+					</table>
+				</td>
+
+			</tr>
+
+			<tr>
+				<th colspan="4">
+					<h2>Agregar bordes, colapsarlos y agregar "padding"</h2>
+				</th>
+			</tr>
+
+			<tr>
+				<td colspan="4">
+					<li>Para agregar bordes a una tabla se usa la propiedad de CSS "<b>border"</b>.</li>
+					<br>
+					<li>Para colapsar los bordes en una tabla se usa la propiedad de CSS "<b>border-collapse</b>".</li>
+					<br>
+					<li>Para agregar "padding" a una tabla se usa la propiedad de CSS "<b>padding</b>".</li>
+					<br>
+					<li>Para agregar mágenes a la table en relación a su entorno se usa la propiedad de CSS "<b>margin</b>".</li>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="background-color:rgb(40,41,35)">
+					<pre>&lt;table style:"border 3px white"&gt;<br>  &lt;tr&gt;<br>    &lt;td&gt;&lt;/td&gt;<br>  &lt;/tr&gt;<br>&lt;/table&gt;</pre>
+				</td>
+
+				<td style="background-color:rgb(40,41,35);padding-left:10px;padding-right:10px">
+					<pre>&lt;table style:"border-collape:collapse"&gt;<br>  &lt;tr&gt;<br>    &lt;td&gt;&lt;/td&gt;<br>  &lt;/tr&gt;<br>&lt;/table&gt;</pre>
+				</td>
+
+				<td style="background-color:rgb(40,41,35)">
+					<pre>&lt;table style:"padding:10px"&gt;<br>  &lt;tr&gt;<br>    &lt;td&gt;&lt;/td&gt;<br>  &lt;/tr&gt;<br>&lt;/table&gt;</pre>
+				</td>
+
+				<td style="background-color:rgb(40,41,35)">
+					<pre>&lt;table style:"margin:3px"&gt;<br>  &lt;tr&gt;<br>    &lt;td&gt;&lt;/td&gt;<br>  &lt;/tr&gt;<br>&lt;/table&gt;</pre>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="background-color:black;padding:10px">
+					<table style="border:3px solid white;padding:0px">
+						<tr>
+							<th class="table1" style="text-align:center">Compañia</th>
+							<th class="table1" style="text-align:center">Contacto</th>
+							<th class="table1" style="text-align:center">País</th>
+						</tr>
+						<tr>
+							<td class="table1" style="text-align:left">Alfreds Futterkiste</td>
+							<td class="table1" style="text-align:left">Maria Anders</td>
+							<td class="table1" style="text-align:left">Germany</td>
+						</tr>
+						<tr>
+							<td class="table1" style="text-align:left">Centro comercial Moctezuma</td>
+							<td class="table1" style="text-align:left">Francisco Chang</td>
+							<td class="table1" style="text-align:left">Mexico</td>
+						</tr>
+					</table>
+				</td>
+
+				<td style="background-color:black;padding:10px">
+					<table style="border-collapse:collapse;padding:0px">
+						<tr>
+							<th class="table1" style="text-align:center">Compañia</th>
+							<th class="table1" style="text-align:center">Contacto</th>
+							<th class="table1" style="text-align:center">País</th>
+						</tr>
+						<tr>
+							<td class="table1" style="text-align:left">Alfreds Futterkiste</td>
+							<td class="table1" style="text-align:left">Maria Anders</td>
+							<td class="table1" style="text-align:left">Germany</td>
+						</tr>
+						<tr>
+							<td class="table1" style="text-align:left">Centro comercial Moctezuma</td>
+							<td class="table1" style="text-align:left">Francisco Chang</td>
+							<td class="table1" style="text-align:left">Mexico</td>
+						</tr>
+					</table>
+				</td>
+
+				<td style="background-color:black;padding:10px">
+					<table style="padding:10px">
+						<tr>
+							<th class="table1" style="text-align:center">Compañia</th>
+							<th class="table1" style="text-align:center">Contacto</th>
+							<th class="table1" style="text-align:center">País</th>
+						</tr>
+						<tr>
+							<td class="table1" style="text-align:left">Alfreds Futterkiste</td>
+							<td class="table1" style="text-align:left">Maria Anders</td>
+							<td class="table1" style="text-align:left">Germany</td>
+						</tr>
+						<tr>
+							<td class="table1" style="text-align:left">Centro comercial Moctezuma</td>
+							<td class="table1" style="text-align:left">Francisco Chang</td>
+							<td class="table1" style="text-align:left">Mexico</td>
+						</tr>
+					</table>
+				</td>
+
+				<td style="background-color:black;padding:0px">
+					<table style="margin:3px">
+						<tr>
+							<th class="table1" style="text-align:center">Compañia</th>
+							<th class="table1" style="text-align:center">Contacto</th>
+							<th class="table1" style="text-align:center">País</th>
+						</tr>
+						<tr>
+							<td class="table1" style="text-align:left">Alfreds Futterkiste</td>
+							<td class="table1" style="text-align:left">Maria Anders</td>
+							<td class="table1" style="text-align:left">Germany</td>
+						</tr>
+						<tr>
+							<td class="table1" style="text-align:left">Centro comercial Moctezuma</td>
+							<td class="table1" style="text-align:left">Francisco Chang</td>
+							<td class="table1" style="text-align:left">Mexico</td>
+						</tr>
+					</table>
+			</tr>
+
+			<th colspan="4">
+				<h2>Agregar y modificar colores de celdas, bordes y fuentes</h2>
+			</th>
+
+			<tr>
+				<td colspan="4">
+					<li>Para agregar y modificar colores a las tablas se usa la propiedad de CSS "<b>background-color</b>", se puede designar por su nombre, dentro de la escala rgb o transparente.</li>
+					<br>
+					<li>Para agregar y modificar colores a los bordes se usa la propiedad de CSS "<b>border-color</b>", se puede designar por su nombre, dentro de la escala rgb o transparente.</li>
+					<br>
+					<li>Para agregar y modificar colores de las fuentes se usa la propiedad de CSS "<b>color</b>", se puede designar por su nombre, dentro de la escala rgb o transparente.</li>
+					<br>
+					<li>Para modificar la fuente usada en los textos se usa la propiedad de CSS "<b>font-family</b>", el tipo de fuente se designa por su nombre, se debe tener en cuenta que las computadoras no tienen todos los tipos de fuentes, es por esto que se recomienda el uso de las fuentes mas comunes, si no se encuentra la fuente solicitada se mostrará la predeterminada.</li>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="background-color:rgb(40,41,35)">
+					<pre>&lt;table&gt;<br>  &lt;tr&gt;<br>    &lt;td style="background-color:blue&gt;<br>    &lt;/td&gt;<br>  &lt;/tr&gt;<br>&lt;/table&gt;</pre>
+				</td>
+
+				<td style="background-color:rgb(40,41,35);padding-left:10px;padding-right:10px">
+					<pre>&lt;table style="background-color:orange"&gt;<br>  &lt;tr&gt;<br>    &lt;td&gt;&lt;/td&gt;<br>  &lt;/tr&gt;<br>&lt;/table&gt;</pre>
+				</td>
+
+				<td style="background-color:rgb(40,41,35)">
+					<pre>&lt;table&gt;<br>  &lt;tr&gt;<br>    &lt;td style="color:green"&gt;&lt;/td&gt;<br>  &lt;/tr&gt;<br>&lt;/table&gt;</pre>
+				</td>
+
+				<td style="background-color:rgb(40,41,35);padding-left:10px;padding-right:10px">
+					<pre>&lt;table style:"font-family:arial"&gt;<br>  &lt;tr&gt;<br>    &lt;td&gt;&lt;/td&gt;<br>  &lt;/tr&gt;<br>&lt;/table&gt;</pre>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="background-color:black;padding:10px">
+					<table style="padding:0px">
+						<tr>
+							<th class="table1" style="text-align:center">Compañia</th>
+							<th class="table1" style="text-align:center">Contacto</th>
+							<th class="table1" style="text-align:center">País</th>
+						</tr>
+						<tr>
+							<td class="table1" style="text-align:left;background-color:blue">Alfreds Futterkiste</td>
+							<td class="table1" style="text-align:left">Maria Anders</td>
+							<td class="table1" style="text-align:left">Germany</td>
+						</tr>
+						<tr>
+							<td class="table1" style="text-align:left">Centro comercial Moctezuma</td>
+							<td class="table1" style="text-align:left">Francisco Chang</td>
+							<td class="table1" style="text-align:left">Mexico</td>
+						</tr>
+					</table>
+				</td>
+
+				<td style="background-color:black;padding:10px">
+					<table style="background-color:orange;padding:0px">
+						<tr>
+							<th class="table1" style="text-align:center">Compañia</th>
+							<th class="table1" style="text-align:center">Contacto</th>
+							<th class="table1" style="text-align:center">País</th>
+						</tr>
+						<tr>
+							<td class="table1" style="text-align:left">Alfreds Futterkiste</td>
+							<td class="table1" style="text-align:left">Maria Anders</td>
+							<td class="table1" style="text-align:left">Germany</td>
+						</tr>
+						<tr>
+							<td class="table1" style="text-align:left">Centro comercial Moctezuma</td>
+							<td class="table1" style="text-align:left">Francisco Chang</td>
+							<td class="table1" style="text-align:left">Mexico</td>
+						</tr>
+					</table>
+				</td>
+
+				<td style="background-color:black;padding:10px">
+					<table style="padding:0px">
+						<tr>
+							<th class="table1" style="text-align:center">Compañia</th>
+							<th class="table1" style="text-align:center">Contacto</th>
+							<th class="table1" style="text-align:center">País</th>
+						</tr>
+						<tr>
+							<td class="table1" style="text-align:left;color:green">Alfreds Futterkiste</td>
+							<td class="table1" style="text-align:left">Maria Anders</td>
+							<td class="table1" style="text-align:left">Germany</td>
+						</tr>
+						<tr>
+							<td class="table1" style="text-align:left">Centro comercial Moctezuma</td>
+							<td class="table1" style="text-align:left">Francisco Chang</td>
+							<td class="table1" style="text-align:left">Mexico</td>
+						</tr>
+					</table>
+				</td>
+
+				<td style="background-color:black;padding:0px">
+					<table style="font-family:arial">
+						<tr>
+							<th class="table1" style="text-align:center">Compañia</th>
+							<th class="table1" style="text-align:center">Contacto</th>
+							<th class="table1" style="text-align:center">País</th>
+						</tr>
+						<tr>
+							<td class="table1" style="text-align:left">Alfreds Futterkiste</td>
+							<td class="table1" style="text-align:left">Maria Anders</td>
+							<td class="table1" style="text-align:left">Germany</td>
+						</tr>
+						<tr>
+							<td class="table1" style="text-align:left">Centro comercial Moctezuma</td>
+							<td class="table1" style="text-align:left">Francisco Chang</td>
+							<td class="table1" style="text-align:left">Mexico</td>
+						</tr>
+					</table>
+				</td>
+
+			</tr>
+
+		</table>
+
+		<br>
+
+	</body>
+
+</html>
