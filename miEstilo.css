@@ -3,8 +3,9 @@
 }
 
 body {
-	background-image: url(Imagenes/BackgroundCSS.png);
+	background-image: url(Imagenes/BackgroundCSSm.png);
 	background-size: cover;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	font-family: sans-serif;
@@ -85,5 +86,8 @@ body {
 	 }
 	 .title1	{
 	 	font-size:2rem;
+	 }
+	 body	{
+	 	background-image:url(Imagenes/BackgroundCSS.png)
 	 }
 }
