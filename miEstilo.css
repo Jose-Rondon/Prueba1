@@ -83,4 +83,7 @@ body {
 	 	display:flex;
 	 	justify-content:space-between;
 	 }
+	 .title1	{
+	 	font-size:1rem;
+	 }
 }
