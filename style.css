@@ -435,6 +435,7 @@ input + h3	{
 
 .talleres	{
 	margin: 2rem auto;
+	max-width: 100%;
 	background-color: rgba(0,0,0,0.7);
 }
 
@@ -459,7 +460,7 @@ input + h3	{
 	border-radius: 1rem;
 	place-items: center;
 	transition-duration: .4s;
-	transform: scale(1);
+	transform: scale(.95);
 }
 
 .talleres-image	{
@@ -467,7 +468,7 @@ input + h3	{
 }
 
 .talleres-content:hover	{
-	transform: scale(1.05);
+	transform: scale(1);
 }
 
 @media (min-width: 900px)	{
