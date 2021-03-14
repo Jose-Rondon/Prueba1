@@ -446,9 +446,8 @@ input + h3	{
 
 .talleres-grid	{
 	display: grid;
-	max-width: 100%;
 	margin: 0 1rem;
-	grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
 	grid-gap: 1rem;
 }
 
