@@ -12,7 +12,7 @@ body	{
 	background-size: cover;
 	background-blend-mode: overlay; 
 	font-family: sans-serif;
-	font-size: calc(.6rem + 0.7vw);
+	font-size: calc(.6rem + 0.5vw);
 	line-height: calc(1rem + 1.3vw);
 }
 
@@ -69,10 +69,12 @@ input + h3	{
 
 .banner	{
 	line-height: 1rem;
+	z-index: 2;
 }
 
 .colbanner1	{
 	max-width: 20rem;
+	display: flex;
 }
 
 .colbanner2	{
@@ -96,6 +98,42 @@ input + h3	{
 	font-weight: bold;
 }
 
+.menu-nav 	{
+	background-color: #354453;
+	height: 2.5rem;
+	display: flex;
+	font-weight: bold;
+	box-shadow:	0px 8px 5px 0px rgba(0,0,0,.8);
+	z-index: 1;
+}
+
+.menu-nav a	{
+	display: flex;
+	flex: 1;
+	text-decoration: none;
+
+}
+
+.menu-nav button	{
+	color: white;
+	flex: 1;
+	text-align: center;
+	font-weight: bold;
+	transition-duration: .4s;
+	border: 1px solid rgba(255,255,255,.2);
+	border-top: none;
+	border-bottom: none;
+	transition-duration: .5s;
+	background-color: #354453;
+	height: 100%;
+}
+
+.menu-nav button:hover	{
+	background-color: #E55E1A;
+	color: black;
+	cursor: pointer;
+}
+
 .banner-text2	{
 	color: white;
 	font-size: 1rem;
@@ -117,7 +155,6 @@ input + h3	{
 	padding: 1rem 2rem;
 	position:absolute;
 	color: white;
-	place-items: center;
 	text-align: center;
 }
 
@@ -125,6 +162,7 @@ input + h3	{
 	max-width: 100%;
 	display:block;
 }
+
 
 .banner2	{
 	display: flex;
@@ -199,6 +237,7 @@ input + h3	{
 .button1:checked ~ .button1-toggle	{
 	background-image: linear-gradient(to bottom, #E55E1A, #99502C);
 	box-shadow: 0px 0px 8px 0.3rem white;
+	color: black
 }
 
 .button1:checked ~ .hidden1	{
@@ -222,7 +261,7 @@ input + h3	{
 	text-align: justify;
 	flex-flow: column;
 	column-width: 45ch;
-	width:100%;
+	max-width: 100%;
 	transform-origin: left;
 	transition: 400ms ease-in-out;
 	opacity: 0;
@@ -252,6 +291,7 @@ input + h3	{
 .button2:checked ~ .button2-toggle	{
 	background-image: linear-gradient(to bottom, #E55E1A, #99502C);
 	box-shadow: 0px 0px 8px 0.3rem white;
+	color: black;
 }
 
 .button2:checked ~ .hidden2	{
@@ -274,7 +314,7 @@ input + h3	{
 	transform: scale(0, 1);
 	flex-flow: column;
 	column-width: 45ch;
-	width:100%;
+	max-width: 100%;
 	transform-origin: right;
 	transition: 400ms ease-in-out;
 	opacity: 0;
@@ -304,6 +344,7 @@ input + h3	{
 .button3:checked ~ .button3-toggle	{
 	background-image: linear-gradient(to bottom, #E55E1A, #99502C);
 	box-shadow: 0px 0px 8px 0.3rem white;
+	color: black;
 }
 
 .button3:checked ~ .hidden3	{
@@ -326,7 +367,7 @@ input + h3	{
 	transform: scale(0, 1);
 	flex-flow: column;
 	column-width: 45ch;
-	width:100%;
+	max-width:100%;
 	transform-origin: left;
 	transition: 400ms ease-in-out;
 	opacity: 0;
@@ -356,6 +397,7 @@ input + h3	{
 .button4:checked ~ .button4-toggle	{
 	background-image: linear-gradient(to bottom, #E55E1A, #99502C);
 	box-shadow: 0px 0px 8px 0.3rem white;
+	color: black;
 }
 
 .button4:checked ~ .hidden4	{
@@ -378,7 +420,7 @@ input + h3	{
 	transform: scale(0, 1);
 	flex-flow: column;
 	column-width: 45ch;
-	width:100%;
+	max-width:100%;
 	transform-origin: right;
 	transition: 400ms ease-in-out;
 	opacity: 0;
@@ -391,6 +433,8 @@ input + h3	{
 }
 
 .imagenes	{
+	padding-bottom: 2rem;
+	padding-top: 1rem;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -441,7 +485,7 @@ input + h3	{
 }
 
 .talleres-header	{
-	padding: 1rem 1rem 0rem;
+	padding: 2rem 1rem 0rem;
 	color: white;
 }
 
@@ -471,7 +515,126 @@ input + h3	{
 	transform: scale(1);
 }
 
+
+.tabla	{
+	max-width: 100%;
+	margin-top: 1.5rem;
+	border-collapse: collapse;
+	display: flex;
+	line-height: 1.3rem;
+}
+
+tr	{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 100%
+}
+
+td	{
+	border: solid black 0.5px;
+	padding: 0.5rem;
+	overflow: auto;
+}
+
+.filaH	{
+	background-color: #3F3F3F;
+	color: white;
+}
+
+.filaH fieldset	{
+	border: none;
+}
+
+.filaH legend	{
+	font-weight: bold;
+}
+
+.filaH1	{
+	background-color: #F8CAAC;
+	color: Black;
+}
+
+.filaH1 fieldset	{
+	border: none;
+}
+
+.filaH1 legend	{
+	font-weight: bold;
+}
+
+.filaName	{
+	color: black;
+	background-color: #EB701C;
+	font-weight: bold;
+	text-align: center;
+}
+
+tr.filaName	td	{
+	flex: 12.5%;
+}
+
+.filaContent	{
+	color: white;
+	background-color: #44546A;
+	justify-content: center;
+}
+
+tr.filaContent	td	{
+	flex: 12.5%;
+}
+
+.filaContent li	{
+	margin-left: 1rem;
+}
+
+.fileContent: shield	{
+	text-align: center;
+}
+
+
 @media (min-width: 900px)	{
-		
+		.tabla	{
+			margin-left: 15%;
+			margin-right: 15%;
+		}
+		.hidden1,
+		.hidden2,
+		.hidden3,
+		.hidden4	{
+			margin-left: 15%;
+			margin-right: 15%;
+			padding: 1rem 5%;
+		}
+		.imagenes	{
+			margin-left: 15%;
+			margin-right: 15%;
+		}
+		.talleres	{
+			margin-left: 15%;
+			margin-right: 15%;
+		}
+		.banner	{
+			display: flex;
+			z-index: 9999;
+		}
+		.menu-nav	{
+			position: sticky;
+			top: 0;
+		}
+		.menu-nav {
+			padding-left: 70%;
+		}
+		.banner1-1	{
+			padding: 3% 15%;
+			flex-flow: row;
+			place-items: center;
+			column-gap: 2rem;
+		}
+		.banner1-1 h3	{
+			text-align: right;
+		}
+		.banner1-1 p {
+			text-align: left;
+		}
 }
 	
