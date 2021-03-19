@@ -479,14 +479,17 @@ input + h3	{
 }
 
 .talleres	{
-	margin: 2rem auto;
+	margin: 2rem auto 0;
 	max-width: 100%;
 	background-color: rgba(0,0,0,0.7);
+	display: flex;
+	flex-flow: column;
 }
 
 .talleres-header	{
 	padding: 2rem 1rem 0rem;
 	color: white;
+	max-width: 100%;
 }
 
 .talleres-grid	{
@@ -534,6 +537,11 @@ td	{
 	border: solid black 0.5px;
 	padding: 0.5rem;
 	overflow: auto;
+	font-size: calc(.3rem + 1vw);
+}
+
+td ul {
+
 }
 
 .filaH	{
@@ -583,12 +591,43 @@ tr.filaContent	td	{
 	flex: 12.5%;
 }
 
-.filaContent li	{
-	margin-left: 1rem;
+.filaContent li {
+	margin-left: calc(.1rem + 0.3vw);
 }
 
-.fileContent: shield	{
-	text-align: center;
+.footer	{
+	flex-basis: 100%;
+	background-color: #282923;
+	display: none;
+	line-height: 1rem;
+	margin-top: 2rem;
+}
+
+.colfooter1	{
+	max-width: 20rem;
+	display: flex;
+}
+
+.colfooter2	{
+	flex:2.5;
+	flex-flow:column;
+	padding: 4rem 1rem 0rem;
+	box-sizing: border-box;
+	text-align: right;
+}
+
+.imagen-footer {
+	display: block;
+	box-sizing: border-box;
+	height: 5rem;
+	margin: 1rem;
+}
+
+.footer-text	{
+	color: white;
+	font-size: 0.75rem;
+	margin: auto auto;
+	font-weight: bold;
 }
 
 
@@ -613,6 +652,11 @@ tr.filaContent	td	{
 			margin-left: 15%;
 			margin-right: 15%;
 		}
+		.talleres-header {
+			text-align: center;
+			max-width: 100%;
+			line-height: 1.5rem;
+		}
 		.banner	{
 			display: flex;
 			z-index: 9999;
@@ -636,5 +680,17 @@ tr.filaContent	td	{
 		.banner1-1 p {
 			text-align: left;
 		}
+		.filaContent li	{
+			margin-left: 1rem;	
+		}
+
+		td {
+			font-size: calc(.6rem + 0.5vw);
+		}
+		.footer {
+			display: flex;
+		}
+
+
 }
 	
